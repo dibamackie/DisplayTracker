@@ -23,7 +23,7 @@ body {
 .logout-btn {
   background: none;
   border: none;
-  color: white;
+  color: rgb(192, 11, 11);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 .category-card {
-  background: white;
+  background: rgb(163, 44, 44);
   display: flex;
   align-items: center;
   padding: 1rem;
