@@ -61,8 +61,12 @@ body {
 }
 
 .icon {
-  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
 }
+
 
 .arrow {
   font-size: 1.4rem;

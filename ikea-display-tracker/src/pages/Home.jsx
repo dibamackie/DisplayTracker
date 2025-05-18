@@ -1,13 +1,13 @@
-// src/pages/Home.jsx
 import "./Home.css";
+import { Armchair, LampDesk, Refrigerator, BedDouble, Baby } from 'lucide-react';
 
 function Home() {
   const categories = [
-    { name: "Living Room", icon: "🛋️" },
-    { name: "Work Space", icon: "💻" },
-    { name: "Kitchen", icon: "🧊" },
-    { name: "Bedroom", icon: "🛏️" },
-    { name: "Kids", icon: "🧸" },
+    { name: "Living Room",icon: <Armchair size={48} strokeWidth={3} /> },
+    { name: "Work Space", icon: <LampDesk size={48} strokeWidth={3} /> },
+    { name: "Kitchen", icon: <Refrigerator size={48} strokeWidth={3} /> },
+    { name: "Bedroom", icon: <BedDouble size={48} strokeWidth={3} /> },
+    { name: "Kids", icon: <Baby size={48} strokeWidth={3} /> },
   ];
 
   return (
@@ -21,13 +21,13 @@ function Home() {
         <h2 className="section-title">Find by Category</h2>
 
         <div className="category-list">
-          {categories.map((cat) => (
-            <div key={cat.name} className="category-card">
-              <span className="icon">{cat.icon}</span>
-              <span className="label">{cat.name}</span>
-              <span className="arrow">→</span>
-            </div>
-          ))}
+         {categories.map(({ name, icon }) => (
+  <div key={name} className="category-card">
+    <span className="icon">{icon}</span>
+    <span className="label">{name}</span>
+    <span className="arrow">→</span>
+  </div>
+))}
         </div>
       </main>
     </div>
@@ -35,3 +35,4 @@ function Home() {
 }
 
 export default Home;
+<Baby size={48} strokeWidth={3} />
