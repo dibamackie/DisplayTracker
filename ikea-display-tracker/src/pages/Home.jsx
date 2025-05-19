@@ -1,5 +1,5 @@
 import "./Home.css";
-import { Armchair, LampDesk, Refrigerator, BedDouble, Baby } from 'lucide-react';
+import { Armchair, LampDesk, Refrigerator, BedDouble, Baby, LogIn, MoveRight } from 'lucide-react';
 import { motion } from "framer-motion";
 
 
@@ -16,7 +16,9 @@ function Home() {
     <div className="home-page">
       <header className="header">
         <h1 className="logo">Display Tracker</h1>
-        <button className="logout-btn">⎋</button>
+        <button className="logout-btn">
+          <LogIn size={32} strokeWidth={2.5} />
+        </button>
       </header>
 
       <main>
@@ -33,7 +35,7 @@ function Home() {
   >
     <span className="icon">{icon}</span>
     <span className="label">{name}</span>
-    <span className="arrow">→</span>
+    <span className="arrow"><MoveRight size={25} strokeWidth={3} /></span>
   </motion.div>
 ))}
 

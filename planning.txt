@@ -1,0 +1,26 @@
+Vite + React project
+start the development server :  npm run dev
+it runs at:  http://localhost:5173
+ikea-display-tracker/
+├── index.html        ← Base HTML file (where your React app mounts)
+├── package.json      ← Lists dependencies & scripts
+├── vite.config.js    ← Vite configuration (for building/serving the app)
+├── public/           ← Static files (like images, icons)
+└── src/              ← All your React code lives here
+    ├── main.jsx      ← Entry point. Starts the app.
+    └── App.jsx       ← Your first component!
+
+__What React Does?__
+React is your UI library. It lets you:
+Build UI using components (reusable blocks)
+Write HTML + JavaScript together using JSX
+Dynamically update the screen when data changes
+
+
+WHAT I INSTALLED:
+LUCIS -> icons
+FRAME-MOTION -> animation
+
+database-> mangoDB
+cloud database for photos
+
