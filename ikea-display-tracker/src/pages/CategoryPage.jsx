@@ -1,10 +1,12 @@
 import { useParams, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { ArrowLeft, Home } from "lucide-react";
 import "./CategoryPage.css";
 
 function CategoryPage() {
   const { name } = useParams();
   const navigate = useNavigate();
+  const [searchTerm, setSearchTerm] = useState("");
 
   const allProducts = {
     "living room": [
@@ -30,6 +32,12 @@ function CategoryPage() {
   };
 
   const products = allProducts[name.toLowerCase()] || [];
+
+  const filteredProducts = products.filter((item) =>
+    `${item.title} ${item.article}`
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="category-page">
